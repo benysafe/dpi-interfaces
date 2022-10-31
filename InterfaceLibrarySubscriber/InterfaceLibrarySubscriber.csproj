@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\..\Release\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\InterfaceLibraryConfiguration\InterfaceLibraryConfigurator.csproj" />
+    <ProjectReference Include="..\InterfaceLibraryDeserializer\InterfaceLibraryDeserializer.csproj" />
+    <ProjectReference Include="..\InterfaceLibraryLogger\InterfaceLibraryLogger.csproj" />
+  </ItemGroup>
+
+</Project>
