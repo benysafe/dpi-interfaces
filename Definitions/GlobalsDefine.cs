@@ -42,7 +42,6 @@ namespace Definitions
     #region JsonMaker
     //Arbol de clases que describen el fichero Json conformador del modulo 
 
-
     public class ModuleMakerConfig
     {
         public Module module { get; set; }
@@ -73,7 +72,6 @@ namespace Definitions
     {
         public string id { get; set; }
         public string name { get; set; }
-        public string function { get; set; }
         public string libraryPath { get; set; }
         public Deserializer deserializer { get; set; }
     }
@@ -99,16 +97,15 @@ namespace Definitions
         public string id { get; set; }
         public string name { get; set; }
         public string libraryPath { get; set; }
-        public Publishers publishers { get; set; }
+        public Publisher[] publishers { get; set; }
     }
 
-    public class Publishers
+    public class Publisher
     {
         public string id { get; set; }
         public string name { get; set; }
         public string libraryPath { get; set; }
     }
-
 
     #endregion JsonMaker
 

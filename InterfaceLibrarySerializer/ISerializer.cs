@@ -25,5 +25,11 @@ namespace InterfaceLibrarySerializer
         /// <param name="priority">Nivel de prioridad con que debe ser atendido el mensaje resultante por el resipiente.</param>
         void serialize(string recipient, object payload, string priority = null);
 
+        /// <summary>
+        /// Agrega un Objeto de publicacion para que sea usado como mecanismo de salida en el serializador.
+        /// </summary>
+        /// <param name="name">Nombre del objeto publisher a agregar.</param>
+        /// <param name="publisher">Objeto publicador a agregar.</param>
+        void addPublisher(string name, IPublisher publisher);
     }
 }
