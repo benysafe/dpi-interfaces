@@ -13,23 +13,22 @@ namespace InterfaceLibrarySerializer
         /// </summary>
         /// <param name="id">Identificador del serializador usado.</param>
         /// <param name="configurator">Objeto que permite acceder a los parametros de configuracion del modulo.</param>
-        /// <param name="publisher">Objeto mediante el cual se publicaran los resultados de la serializacion.</param>
         /// <param name="logger">Registrador.</param>
-        void init(string id, IConfigurator configurator, IPublisher publisher, IGenericLogger logger);
+        void init(string id, IConfigurator configurator, IGenericLogger logger);
 
         /// <summary>
         /// Serializa el mensaje resultante del procesamiento por modulo.
         /// </summary>
-        /// <param name="recipient">Nombre del recipiente destino del mensaje.</param>
+        /// <param name="mssgType">Tipo de mensaje al que corresponde el payload.</param>
         /// <param name="payload">Mensaje resultado del procesamiento por el modulo.</param>
         /// <param name="priority">Nivel de prioridad con que debe ser atendido el mensaje resultante por el resipiente.</param>
-        void serialize(string recipient, object payload, string priority = null);
+        void serialize(string mssgType, object payload, string priority = null);
 
         /// <summary>
         /// Agrega un Objeto de publicacion para que sea usado como mecanismo de salida en el serializador.
         /// </summary>
-        /// <param name="name">Nombre del objeto publisher a agregar.</param>
+        /// <param name="id">Idenificador del objeto publisher a agregar.</param>
         /// <param name="publisher">Objeto publicador a agregar.</param>
-        void addPublisher(string name, IPublisher publisher);
+        void addPublisher(string id, IPublisher publisher);
     }
 }

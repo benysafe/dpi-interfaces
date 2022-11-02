@@ -18,9 +18,8 @@ namespace InterfaceLibraryProcessor
         /// <summary>
         /// Agrega un Objeto de serializacion para que sea usado como mecanismo de salida en el procedor.
         /// </summary>
-        /// <param name="name">Nombre del objeto serializador a agregar.</param>
         /// <param name="serializer">Objeto serializador a agregar.</param>
-        void addSerializer(string name, ISerializer serializer);
+        void addSerializer( ISerializer serializer);
 
         /// <summary>
         /// Inicia el procesamiento del mensaje introducido al procesador.

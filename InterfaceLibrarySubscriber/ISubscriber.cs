@@ -16,11 +16,9 @@ namespace InterfaceLibrarySubscriber
         void init(string id, IConfigurator configurator, IGenericLogger logger);
 
         /// <summary>
-        /// Asigna un suscriptor su correspondiente objeto deserializador.
+        /// Estableces las suscripciones y le asigan a cada una su deserializador correspondiente.
         /// </summary>
-        /// <param name="suscription">Nombre del suscriptor.</param>
-        /// <param name="deserializer">Objeto deserializador correspondiente.</param>
-        void subscribe(string suscription, IDeserializer deserializer);
+        void subscribe();
 
         /// <summary>
         /// Inicia el ciclo de espera de los mensajes a procesar por el modulo.
@@ -31,5 +29,11 @@ namespace InterfaceLibrarySubscriber
         /// Finaliza el ciclo de espera de los mensajes a procesar por el modulo.
         /// </summary>
         void endLoop();
+        /// <summary>
+        /// Agrega un objeto de deserializador.
+        /// </summary>
+        /// <param name="id">Idenificador del objeto deserializador a agregar.</param>
+        /// <param name="deserializer">Objeto deserializador a agregar.</param>
+        void addDeserializer(string id, IDeserializer deserializer);
     }
 }

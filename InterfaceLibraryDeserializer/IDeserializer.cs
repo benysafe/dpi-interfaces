@@ -1,4 +1,5 @@
 ﻿using InterfaceLibraryProcessor;
+using InterfaceLibraryConfigurator;
 using System;
 using System.Collections.Generic;
 using InterfaceLibraryLogger;
@@ -8,7 +9,7 @@ namespace InterfaceLibraryDeserializer
     public interface IDeserializer
     {
 
-        void init(string id, IGenericLogger logger);
+        void init(string id, IConfigurator configurator, IGenericLogger logger);
 
         void addProcessor(string processorName, IProcessor processor);
 
