@@ -17,8 +17,9 @@ namespace InterfaceLibrarySubscriber
 
         /// <summary>
         /// Estableces las suscripciones y le asigan a cada una su deserializador correspondiente.
+        /// <param name="subRecipent">Identificador del subrecipiente al que se suscribe el modulo, 'null' en casos donde los modulos son escalables</param>
         /// </summary>
-        void subscribe();
+        void subscribe(string subRecipent = null);
 
         /// <summary>
         /// Inicia el ciclo de espera de los mensajes a procesar por el modulo.
