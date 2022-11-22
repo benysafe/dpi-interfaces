@@ -21,7 +21,7 @@ namespace Definitions
         public const string Module = "module";
         public const string Name = "name";
         public const string Id = "id";
-        public const string Subscriptors = "subscriptors";
+        public const string Subscriptors = "suscriptors";
         public const string Processor = "processors";
         public const string Publishers = "publishers";
         public const string Host = "host";
