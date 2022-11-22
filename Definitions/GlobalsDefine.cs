@@ -10,7 +10,7 @@ namespace Definitions
         public const string PathConfig = "pathConfig";
         public const string PathLibrary = "libraryPath";
         public const string Logger = "logger";
-        public const string Subscriptions = "subscriptions";
+        public const string Subscriptions = "suscriptions";
         public const string Deserializer = "deserializer";
         public const string Processor = "processor";
         public const string Serializers = "serializers";
