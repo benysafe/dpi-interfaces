@@ -11,9 +11,9 @@ namespace InterfaceLibraryDeserializer
 
         void init(string id, IConfigurator configurator, IGenericLogger logger);
 
-        void addProcessor(string processorName, IProcessor processor);
+        void addProcessor(IProcessor processor);
 
-        void deserialize(string processorName, byte[] payload, Dictionary<string,object> metaDatas = null);
+        void deserialize( byte[] payload, Dictionary<string,object> metaDatas = null);
 
     }
 }
