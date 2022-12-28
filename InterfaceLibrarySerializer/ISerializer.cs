@@ -21,7 +21,7 @@ namespace InterfaceLibrarySerializer
         /// </summary>
         /// <param name="mssgType">Tipo de mensaje al que corresponde el payload.</param>
         /// <param name="payload">Mensaje resultado del procesamiento por el modulo.</param>
-        /// <param name="priority">Nivel de prioridad con que debe ser atendido el mensaje resultante por el resipiente.</param>
+        /// <param name="priority" value = "["LOW", "NORMAL", "HIGH"]" default= "NORMAL">Nivel de prioridad con que debe ser atendido el mensaje resultante por el resipiente, si no se espesifica se asume "NORMAL"</param>
         void serialize(string mssgType, object payload, string priority = "NORMAL");
 
         /// <summary>
