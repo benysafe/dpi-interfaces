@@ -18,9 +18,9 @@ namespace InterfaceLibraryPublisher
         /// Publica el mensaje resultante de la serializacion del mensajeresultante del procesamiento por modulo.
         /// </summary>
         /// <param name="recipient">Nombre del recipiente destino del mensaje.</param>
-        /// <param name="payload">Mensaje resultado de la serializacion por el modulo.</param>
+        /// <param name="payload">Mensaje resultado de la serializacion por el modulo, casteado a object</param>
         /// <param name="priority" value = "["LOW", "NORMAL", "HIGH"]" default= "NORMAL">Nivel de prioridad con que debe ser atendido el mensaje resultante por el resipiente, si no se espesifica se asume "NORMAL"</param>
         /// <returns>'true' si la publicacion ocurrio con exito, de lo contrario 'false'</returns>
-        bool publish(string recipient, byte[] payload, string priority = "NORMAL");
+        bool publish(string recipient, object payload, string priority = "NORMAL");
     }
 }
