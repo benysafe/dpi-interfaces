@@ -22,11 +22,11 @@ namespace InterfaceLibraryDeserializer
         void addProcessor(IProcessor processor);
         /// <summary>
         /// Deserializa el contenifdo de 'payload' para ser procesados por el procesador
-        /// <param name="payload">Arreglo de bytes que se debe deserializar para ser procesados</param>
+        /// <param name="payload">Dato tratado como objecto que se debe deserializar para ser procesados</param>
         /// <param name="metaDatas">Diccionario que contiene los metadatos proveidos por el suscriptor en caso de ser necesario, 'null' en casos donde el suscriptor no introduce metadatos para ser procesados</param>
         /// <returns>'true' indicando que la deserializacion y posteriormente procesamiento se completó correctamente, de lo contrario devuelve 'false'.</returns>
         /// </summary>
-        bool deserialize( byte[] payload, Dictionary<string,object> metaDatas = null);
+        bool deserialize( object payload, Dictionary<string,object> metaDatas = null);
 
     }
 }
