@@ -42,10 +42,9 @@ namespace InterfaceLibraryConfigurator
         void addParameter(string parameter, string key);
 
         /// <summary>
-        /// Recarga la configuracion funcional desde el fichero externo espesificado en el metodo 'load'.
+        /// Verifica si corresponde o no realizar una reconfiguración de los parámetros del fichero.
         /// </summary>
-        /// <returns>Un booleano indicanco con 'true' que la recarga de configuracion se efectuo satisfactoriamente, de lo contrario devuelve 'false'</returns>
-        bool reLoad();
-
+        /// <returns>Un booleano en 'true' indicando que se debe reconfigurar los parámetros desde fichero, de lo contrario devuelve 'false'</returns>
+        bool hasNewConfig();
     }
 }
