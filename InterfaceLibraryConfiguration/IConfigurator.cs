@@ -44,7 +44,8 @@ namespace InterfaceLibraryConfigurator
         /// <summary>
         /// Verifica si corresponde o no realizar una reconfiguración de los parámetros del fichero.
         /// </summary>
-        /// <returns>Un booleano en 'true' indicando que se debe reconfigurar los parámetros desde fichero, de lo contrario devuelve 'false'</returns>
-        bool hasNewConfig();
+        /// <param name="id">Identificador de la biblioteca y seccion de configuracion de la que se quiere verificar si hay cambios de configuracion</param>
+        /// <returns>Un booleano en 'true' indicando que se debe reconfigurar los parámetros asociados a la seccion con el id desde fichero, de lo contrario devuelve 'false'</returns>
+        bool hasNewConfig(string id);
     }
 }

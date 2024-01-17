@@ -28,11 +28,5 @@ namespace InterfaceLibraryProcessor
         /// <param name="metadataModule">Metadato proveniente del suscriptor en caso de ser necesario.</param>
         /// <returns>'true' indicando que se proceso correctamente de lo contrario devuelve 'false'.</returns>
         bool proccess(object payload, object metadataModule = null);
-
-        /// <summary>
-        /// Reconfigura los parametros del procesador
-        /// </summary>
-        /// <returns>'true' indicando que se reconfiguro correctamente el modulo, de lo contrario devuelve 'false'.</returns>
-        bool reConfig();
     }
 }
